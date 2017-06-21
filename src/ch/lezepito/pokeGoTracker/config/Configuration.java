@@ -73,7 +73,7 @@ public class Configuration {
 		/*Golduck*/    {55, 100, 200, -1},
 		/*Mankey*/    {56, 100, 200, -1},
 		/*Primeape*/    {57, 100, 200, -1},
-		/*Growlithe*/    {58, 100, 500, -1},
+		/*Growlithe*/    {58, 100, 800, -1},
 		/*Arcanine*/    {59, 100, 200, -1},
 		/*Poliwag*/    {60, -1, -1, -1},
 		/*Poliwhirl*/    {61, -1, -1, -1},
