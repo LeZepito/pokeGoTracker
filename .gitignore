@@ -1,0 +1,8 @@
+.classpath
+.metadata/
+.project
+bin/
+script/log/*
+stuff/
+script/pokeGoTracker.pid
+src/ch/lezepito/pokeGoTracker/util/PrivateConstants.java
