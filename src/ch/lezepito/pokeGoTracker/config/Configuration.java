@@ -243,7 +243,7 @@ public class Configuration {
 		/*Delibird*/    {225, 100, 200, -1},
 		/*Mantine*/    {226, 100, 800, -1},
 		/*Skarmory*/    {227, 100, 200, -1},
-		/*Houndour*/    {228, 100, 200, -1},
+		/*Houndour*/    {228, 100, 600, -1},
 		/*Houndoom*/    {229, 100, 200, -1},
 		/*Kingdra*/    {230, 100, 200, -1},
 		/*Phanpy*/    {231, 100, 200, -1},
