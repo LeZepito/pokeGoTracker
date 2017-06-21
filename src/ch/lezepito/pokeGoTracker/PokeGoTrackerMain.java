@@ -69,8 +69,8 @@ public class PokeGoTrackerMain {
 	
 	public void init() {
 		
-		System.setProperty("https.proxyHost", PrivateConstants.ADN_PROXY);
-		System.setProperty("https.proxyPort", PrivateConstants.ADN_PROXY_PORT);
+		System.setProperty("https.proxyHost", PrivateConstants.PROXY);
+		System.setProperty("https.proxyPort", PrivateConstants.PROXY_PORT);
 		System.setProperty("http.agent", "");
 		//System.setProperty("javax.net.debug", "all");
 		
