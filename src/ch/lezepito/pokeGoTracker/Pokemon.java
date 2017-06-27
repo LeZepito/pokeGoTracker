@@ -304,9 +304,20 @@ public class Pokemon {
 		return filteredPokemons;
 	}
 	
+	private boolean isUnownToBeShown(boolean[] unownConfig) {
+		if (getId() == 201) {
+			if (getMove1() < 0 || getMove1() > unownConfig.length) {
+				LOGGER.info("Skipping unknown unown spec: " + toString());
+			}
+			return unownConfig[getMove1()];
+		}
+		return false; //no unown
+	}
+	
 	private static List<Pokemon> applyUnownFilter(List<Pokemon> pokemons, boolean[] unownConfig) {
 		return pokemons.stream()
-				.filter(p -> p.getId() != 201 || (p.getId() == 201 && unownConfig[p.getMove1()]))
+				.filter(p -> p.getId() != 201 || //not an unown -> keep
+					p.isUnownToBeShown(unownConfig))
 				.collect(Collectors.toList());
 	}
 	
