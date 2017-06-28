@@ -308,6 +308,7 @@ public class Pokemon {
 		if (getId() == 201) {
 			if (getMove1() < 0 || getMove1() > unownConfig.length) {
 				LOGGER.info("Skipping unknown unown spec: " + toString());
+				return false;
 			}
 			return unownConfig[getMove1()];
 		}
