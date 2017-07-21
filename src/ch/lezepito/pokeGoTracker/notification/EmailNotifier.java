@@ -79,12 +79,15 @@ public class EmailNotifier implements Notifier {
 	public boolean notify(List<Pokemon> filteredPokemons) {
 		// Send email
 
-		//abort if we don't want to send empty mails
-		if (filteredPokemons.size() == 0 && !sendEmptyMail) {
+		String text = "<b>NOTHING RIGHT NOW</b>";
+		if (filteredPokemons.size() > 0) {
+			text = composeText(filteredPokemons);
+		}
+		else if (!sendEmptyMail) {
+			//abort if we don't want to send empty mails
 			return true;
 		}
 		
-		String text = composeText(filteredPokemons);
 		sendEmail(text);
 
 		return true;
