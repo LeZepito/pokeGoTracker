@@ -6,5 +6,6 @@ public class AlertEmailNotifier extends EmailNotifier {
 	public AlertEmailNotifier() {
 		recepient = PrivateConstants.ALERT_TO_EMAIL;
 		sendEmptyMail = false;
+		sendConfigDump = false;
 	}
 }
